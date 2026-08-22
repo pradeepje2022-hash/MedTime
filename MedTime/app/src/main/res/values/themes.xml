@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.MedTime" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.MedTime.Alarm" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+</resources>
