@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '**.zip'
+  workflow_dispatch:
 
 jobs:
   unzip:
@@ -15,10 +16,16 @@ jobs:
       - name: Unzip file
         run: unzip *.zip -d extracted
 
+      - name: Move files to root
+        run: |
+          cp -r extracted/* .
+          rm -rf extracted
+          rm *.zip
+
       - name: Commit and Push
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add .
-          git commit -m "Unzipped files"
+          git commit -m "Unzipped and moved files to root"
           git push
