@@ -1,0 +1,6 @@
+{
+  "name": "MedTime – Medicine Reminder",
+  "description": "Clean, reliable medicine reminder app with custom scheduling, alarms, full-screen reminders, notifications, snooze, and adherence history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
