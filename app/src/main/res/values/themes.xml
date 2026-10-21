@@ -1,7 +1,0 @@
-<resources>
-    <style name="Theme.JPingerPro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">#0088FF</item>
-        <item name="colorSecondary">#00E5FF</item>
-        <item name="android:statusBarColor">#0A1529</item>
-    </style>
-</resources>
